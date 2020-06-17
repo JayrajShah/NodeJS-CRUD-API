@@ -1,23 +1,28 @@
 {
   "name": "nodejs-crud-app",
   "version": "1.0.0",
-  "description": "CRUD app using nodeJS,expressJS,MySQL",
+  "description": "CRUD App Using NodeJS, ExpressJS and MySQL",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "runapp": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client-install": "cd client && npm install"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JayrajShah/NodeJS-CRUD-App.git"
   },
-  "author": "Jayraj",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JayrajShah/NodeJS-CRUD-App/issues"
   },
   "homepage": "https://github.com/JayrajShah/NodeJS-CRUD-App#readme",
   "dependencies": {
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mysql": "^2.18.1"
