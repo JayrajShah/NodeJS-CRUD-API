@@ -30,4 +30,12 @@ $ npm i --save-dev nodemon
 
 Database file is already included. Import SQL file either in Workbench or in phpmysql.
 
+### Running the App
+
+Run this command in the terminal. Then go to <b>http://localhost:5000</b>
+
+```sh
+$ npm run server
+```
+
 ### FrontEnd connection in next Updates.
